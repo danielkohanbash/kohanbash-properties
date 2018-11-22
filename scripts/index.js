@@ -25,5 +25,5 @@ function smoothScroll(){
 }
 
 $(document).ready(function(){
-  smoothScroll(); //only do this on home page - might get glitchy for other anchor tags
+  // smoothScroll(); //only do this on home page - might get glitchy for other anchor tags - getting glitchy everywhere
 });

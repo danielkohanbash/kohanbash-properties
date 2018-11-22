@@ -57,6 +57,7 @@ body, html{
 /*Basic nav settings*/
 nav{
   font-size:12px;
+  letter-spacing: 2px;
 }
 
 @media(min-width: 850px){
@@ -67,7 +68,7 @@ nav{
 
 @media(min-width:1000px){
   nav{
-    font-size:15px;
+    font-size:13px;
   }
 }
 
@@ -302,138 +303,4 @@ nav{
   to {
     opacity:0;
   }
-}
-
-/* Parallax */
-.parallax{
-  position: relative;
-  /* opacity: 0.65; */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 850px;
-}
-
-.bgimg-1 {
-  background-image: url("../img/background2.jpg");
-}
-
-.bgimg-2 {
-  background-image: url("../img/background.jpg");
-}
-
-.bgimg-3 {
-  background-image: url("img_parallax3.jpg");
-}
-
-.caption {  
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  font-family:Mina; 
-  font-weight: 700;
-  color: white;
-  text-shadow: 1px 1px rgb(209,164,35);
-}
-
-.caption .title {
-  background-color: black;
-  color: #fff;
-  padding: 18px;
-  font-size: 20px;
-  letter-spacing: 5px;
-}
-
-@media (min-width:768px){
-  .caption .title {
-    font-size: 30px;  
-    letter-spacing: 10px;
-  }
-}
-
-/* on non-tall cells, change positioning and height */
-@media(max-height:670px){
-  .caption{
-    top:45%;
-  }
-  
-  .parallax{
-    height:700px;
-  }
-}
-
-h3 {
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .parallax{
-    background-attachment: scroll;
-  }
-}
-
-/* Elements between the parallax images */
-.boxes{
-  background-color:black;
-  border-radius: 10px;
-  margin-top: 30px;
-  border: 5px solid #ddd;
-}
-
-.mission_text, .expertise_text{
-  font-weight:400; 
-  font-family:Exo; 
-  padding:20px;
-  line-height:2;
-  font-size: 17px;
-  text-align: center;
-  color:white;
-  list-style: none;
-}
-
-.expertise_text{
-  padding: 5px;
-}
-
-.asset_link{
-  color:white;
-}
-
-.asset_link:hover{
-  color:rgb(209,164,35);
-  text-decoration: none;
-}
-
-@media(min-width:768px){
-  .mission_text{
-    font-size: 20px;
-  }
-
-  .expertise_text{
-    font-size:30px;
-  }
-}
-
-/* CONTAINER */
-.container .jumbotron, .container-fluid .jumbotron{
-  background-color: rgba(242,242,222,.6);  
-  margin-top: 50px;
-  border-radius: 100px;
-}
-
-@media(min-width: 768px){
-  #aboutpage .container, .container{
-    width:100%;
-  }
-}
-
-.container{
-  background-color: black;
 }
