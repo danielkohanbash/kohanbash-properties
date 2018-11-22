@@ -1,0 +1,11 @@
+/*dont let them access it on mobile */
+#idxFrame{
+  width:933px;
+  height:900px;
+}
+
+@media (min-width:950px){
+  #idxFrame{
+    display: none;
+  }
+}
