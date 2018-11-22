@@ -1,0 +1,318 @@
+/* *{
+  box-sizing: border-box;
+} */
+
+body, html{
+  text-align: center;
+  height: 100%;
+  font-family: Exo;  
+  background-color:white;
+}
+
+/***** LOGO ******/
+
+/* on mobile, dont show the logo - it'll just be the navbar. on desktop, show */
+.logo{
+  display: none;
+  background-color: black;
+  position: absolute;
+  z-index: 3000;
+  height:0;
+}
+
+#daniel_logo
+{
+  display:none; 
+  position: absolute;
+  background-color: rgba(0,0,0,0);
+}
+
+@media(min-width: 768px){
+  #daniel_logo{
+    width:300px;
+    height:150px;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5000;
+  }
+  
+  .logo{
+    width: 100%;  
+    height:150px;
+    display: block;
+  }
+}
+
+@media(min-width: 850px){
+  #daniel_logo{
+    height:150px;
+    width:375px;
+  }
+}
+
+/***** NAVBAR ******/
+
+/*Basic nav settings*/
+nav{
+  font-size:12px;
+}
+
+@media(min-width: 850px){
+  nav{
+      font-size:13px;
+  }
+}
+
+@media(min-width:1000px){
+  nav{
+      font-size:15px;
+  }
+}
+
+@media(min-width: 768px){
+  .navbar-nav{
+  float:none;
+  display: inline-block;
+  }
+}/* this somehow keeps it centered */
+
+.navbar-fixed-top{
+  z-index: 4000;
+  top:140px;
+  position:absolute;
+}
+
+/* BRANDS */
+.navbar-brand{
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  text-align: center;
+  font-family: Mina;
+  color: rgb(242,242,222);
+  padding:0 0;
+  padding-top:10px;
+  z-index: 6000;
+  display: none;
+}
+
+.navbar-brand img{
+  width:50px;
+  height:30px;
+  background-color: none;
+}
+
+.navbar-bra{
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  text-align: center;
+  font-family: Mina;
+  color: rgb(242,242,222);
+  display:none;
+  padding-top:10px;
+  z-index: 6000;
+  padding-top:10px;
+}
+
+.navbar-bra img{
+  width:50px;
+  height:30px;
+  background-color: none;
+  }
+
+.navbar-nav>li>a.navbar-bra{
+  padding: 0 0;
+  padding-top:10px;
+}
+
+@media(max-width: 768px){ 
+  .navbar-brand{
+      display: block;
+  } 
+
+  .navbar-bra, .nav>li.showit{
+      display:none;
+  }
+
+  .dontshow{
+  display: none; 
+  }
+  
+} /*dont want this to happen unless it hits top of screen*/
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+  color:white;
+}
+
+.navbar-default .navbar-brand{
+  transition: color .5s;
+  color: black;
+}
+
+.dropdown-menu{
+  font-size:12px;
+  padding:9px;
+}
+
+.dropdown-menu .divider{
+  background-color: rgb(209,164,35);
+}
+
+.nav>li.dontshow{
+  display: none;
+}
+
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form{
+  border-color:rgb(209,164,35);
+}
+
+
+
+.nav>li.showit{
+  display:block;
+  pointer-events:auto;
+}
+
+
+
+.navbar-toggle {
+  z-index:3;
+  /*background-color: black;*/
+  background-color: rgb(209,164,35);
+  transition: background-color .5s;
+}
+
+.navbar-default .navbar-toggle{
+  border-color:black;
+  background-color: rgb(209,164,35);
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+  /*background-color: rgb(209,164,35);*/
+  background-color: black;
+}
+
+.navbar{
+  /*background-color: rgb(209,164,35);*/
+  background-color: black;
+  border:none;
+}
+
+.navbar-default .navbar-nav>li>a{
+  transition: background-color .3s;
+  color: rgb(209,164,35);
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
+  /*background-color: rgb(242, 242, 222);*/
+  background-color: rgb(209,164,35);
+  color:black;
+}
+
+.navbar-default .navbar-nav>li.dontshow.showit > a:focus, .navbar-default .navbar-nav>li.dontshow.showit > a:hover{
+  background-color:transparent;
+}
+
+.navbar-nav .open .dropdown-menu{
+  /*background-color: rgb(209,164,35);*/
+  background-color: black;
+}
+
+
+
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover
+{
+  color:black;
+}
+
+.dropdown-menu>li>a{
+  transition: background-color .3s;
+  color:rgb(209,164,35);
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+  /*background-color: rgb(242, 242, 222);*/
+  background-color: rgb(209,164,35);
+}
+
+
+@media(max-width: 768px){
+
+  .navbar-fixed-top{
+      top:0px;
+  }
+}
+
+@media (max-width: 768px){
+
+  .navbar-nav .open .dropdown-menu{
+  /* background-color: rgb(209,164,35);*/
+  background-color: black;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a{
+  color: white;
+  text-align: center;
+  }
+
+  .navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:active{
+  /*background-color: rgb(242, 242, 222);*/
+  background-color: rgb(209,164,35);
+  color:black;
+  }
+} /*when the screen is smaller than 767px, make sure navbar looks same*/
+
+.dropdown-menu{
+  border:none;
+  background-color: black;
+}
+
+/* cool effects */
+.navbar-brand, ul a {
+  animation: fadein 2s;
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+  font-family: Mina;
+}
+
+
+.navbar-default .navbar-nav>li:nth-of-type(8)>a:focus, .navbar-default .navbar-nav>li:nth-of-type(8)>a:hover
+{
+    background-color: none;
+} /*not working*/
+
+@media (min-width: 768px) {
+  ul.nav li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+  }
+}
+
+/*dont let them access it on mobile */
+#idxFrame{
+  width:933px;
+  height:900px;
+}
+
+@media (max-width:950px){
+  #idxFrame{
+      display: none;
+  }
+
+  .nav>li.search_option, .search_option{
+      display: none;
+  }
+}
+
+
+.affix{
+  position:fixed;
+  top:0;
+  right:0;
+  /* font-size: 13px; */
+}
+
