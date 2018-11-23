@@ -49,7 +49,7 @@ function navbarGenerator(){
     <ul class="nav navbar-nav">
       <!-- this is the main content of the nav -->
       <li><a href="index.html#mission"> <i class="fas fa-home"></i> Home</a></li>
-      <li class = "diff"><a href="http://danielkohanbashproperties.com/about.html"><i class="fas fa-user"></i> About </a></li>
+      <li class = "diff"><a href="about.html#about"><i class="fas fa-user"></i> About </a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-key"></i> Listings <span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -58,14 +58,14 @@ function navbarGenerator(){
           <li class = "diff"><a href="index.html#recent_sales"><i class="fas fa-handshake"></i> Recent Sales</a></li>
         </ul>
       </li>
-      <li class = "search_option"><a href="http://danielkohanbashproperties.com/search.html"> <i class="fas fa-search"></i> Search</a></li>
+      <li class = "search_option"><a href="search.html#search"> <i class="fas fa-search"></i> Search</a></li>
       
       <li class = "dontshow"><a href="index.html#mission" class="navbar-bra"><img class = "imagek" src="img/K.png"></a></li> 
       
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-briefcase"></i> Services <span class="caret"></span></a>
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-briefcase"></i> Services <span class="caret"></spsan></a>
         <ul class="dropdown-menu">
-          <li class = "diff"><a href="http://danielkohanbashproperties.com/services.html"><i class="fas fa-building"></i> Asset Management</a></li>
+          <li class = "diff"><a href="services.html#services"><i class="fas fa-building"></i> Asset Management</a></li>
           <!-- <li role="separator" class="divider"></li>
             <li class = "diff"><a href="#"><i class="far fa-handshake"></i> Buyer & Seller</a></li> -->
           </ul>
@@ -98,7 +98,7 @@ function footerGenerator(){
   <div class = "row">
   <div class = "col-sm-4 col-sm-push-4 col-xs-12" id = "middle">
     <p><a href="index.html#mission"> <strong> Kohanbash Properties</strong></a></p>
-    <p> <a href="index.html#mission"> Home</a> | <a href="http://danielkohanbashproperties.com/about.html"> About</a> | <a href="index.html#active_listings"> Listings</a> | <a href="http://danielkohanbashproperties.com/services.html"> Services</a> | <a class = "search_option" href="http://danielkohanbashproperties.com/search.html"> Property Search |</a><a href="index.html#neighborhoods"> Neighborhoods</a></p>
+    <p> <a href="index.html#mission"> Home</a> | <a href="about.html#about"> About</a> | <a href="index.html#active_listings"> Listings</a> | <a href="services.html#services"> Services</a> | <a class = "search_option" href="search.html#search"> Property Search |</a><a href="index.html#neighborhoods"> Neighborhoods</a></p>
   </div>
   
   <div class = "col-sm-4 col-sm-pull-4 col-xs-6" id = "left">

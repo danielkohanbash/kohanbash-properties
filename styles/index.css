@@ -1,14 +1,5 @@
 
 /* Parallax */
-.parallax{
-  position: relative;
-  /* opacity: 0.65; */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 500px;
-}
 
 .bgimg-1 {
   background-image: url("../img/background2.jpg");
@@ -16,7 +7,7 @@
 }
 
 .bgimg-2 {
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/expertise.jpg");
 }
 
 .bgimg-3 {
@@ -35,67 +26,14 @@
   background-image: url("../img/contact.jpg");
 }
 
-.caption {  
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  font-family:Mina; 
-  font-weight: 700;
-  color: white;
-  /* text-shadow: 1px 1px rgb(209,164,35); */
-}
-
-.caption .title {
-  background-color: black;
-  color: #fff;
-  padding: 18px;
-  font-size: 20px;
-  letter-spacing: 5px;
-}
-
-@media (min-width:768px){
-  .caption .title {
-    font-size: 30px;  
-    letter-spacing: 10px;
-  }
-}
-
 /* on non-tall cells, change positioning and height */
 @media(max-height:670px){
-  .caption{
-    top:45%;
-  }
-  
-  .parallax{
-    height:300px;
-  }
-
   .bgimg-1{
     height:700px;
   }
 }
 
-h3 {
-  text-transform: uppercase;
-  font: 20px "Lato", sans-serif;
-  color: #111;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .parallax{
-    background-attachment: scroll;
-  }
-}
-
 /* Elements between the parallax images */
-.boxes{
-  background-color:black;
-  border-radius: 10px;
-  border: 5px solid #ddd;
-}
 
 .mission_text, .expertise_text, .addresses, .neighborhood_title, .neighborhood_text, .contact_options{
   font-weight:400; 
@@ -161,18 +99,7 @@ h3 {
   visibility: hidden;
   } /*so when we click it, it goes to the right place*/
 
-/* CONTAINER */
 
-@media(min-width: 768px){
- .container{
-    width:100%;
-  }
-}
-
-.container{
-  background-color: black;
-  padding:30px 30px 0 30px;
-}
 
 /* Listings */
 .addresses{
@@ -203,9 +130,6 @@ h3 {
   padding:10px 20px;
 }
 
-.thumbnail{
-  padding-top:15px;
-}
 
 .flyer_hover {
   position: relative;

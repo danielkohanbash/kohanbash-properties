@@ -1,0 +1,15 @@
+.bgimg-1 {
+  background-image: url("../img/services.jpg");
+  height:850px;
+}
+
+/* on non-tall cells, change positioning and height */
+@media(max-height:670px){
+  .bgimg-1{
+    height:700px;
+  }
+}
+
+.heading, .text{
+  color:white;
+}

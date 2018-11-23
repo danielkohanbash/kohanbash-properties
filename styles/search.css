@@ -9,3 +9,15 @@
     display: none;
   }
 }
+
+.bgimg-1 {
+  background-image: url("../img/search.png");
+  height:850px;
+}
+
+/* on non-tall cells, change positioning and height */
+@media(max-height:670px){
+  .bgimg-1{
+    height:700px;
+  }
+}

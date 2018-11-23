@@ -325,6 +325,7 @@ footer{
   background-color: black;
   padding-top: 20px;
   padding-bottom: 5px;
+  border-top:4px solid rgb(209,164,35);
 }
 
 footer p{
@@ -384,5 +385,131 @@ color:white;
 @media(min-width:768px){
   .created_by{
     font-size: 14px;
+  }
+}
+
+/* Parallax */
+.parallax{
+  position: relative;
+  /* opacity: 0.65; */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+}
+
+.caption {  
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-family:Mina; 
+  font-weight: 700;
+  color: white;
+  /* text-transform: uppercase; */
+  /* text-shadow: 1px 1px rgb(209,164,35); */
+}
+
+.caption .title {
+  background-color: black;
+  color: #fff;
+  padding: 18px;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+@media (min-width:768px){
+  .caption .title {
+    font-size: 30px;  
+    letter-spacing: 10px;
+  }
+}
+
+/* on non-tall cells, change positioning and height */
+@media(max-height:670px){
+  .caption{
+    top:45%;
+  }
+  
+  .parallax{
+    height:300px;
+  }
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .parallax{
+    background-attachment: scroll;
+  }
+}
+
+/* Elements between the parallax images */
+.boxes{
+  background-color:black;
+  border-radius: 10px;
+  border: 5px solid #ddd;
+}
+
+/* CONTAINER */
+
+@media(min-width: 768px){
+  .container{
+     width:100%;
+   }
+ }
+ 
+ .container{
+   background-color: black;
+   padding:30px 30px 0 30px;
+ }
+
+ .thumbnail{
+  padding-top:15px;
+}
+
+/* On other pages */
+.other.container{
+  background-color: white;
+}
+
+.other .boxes {
+  background-color:white;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+
+.heading, .text{
+  font-weight:400; 
+  font-family:Exo; 
+  padding:20px;
+  line-height:2;
+  font-size: 17px;
+  text-align: center;
+  color:black;
+  list-style: none;
+  letter-spacing: 2px;
+}
+
+.text{
+  font-size:12px;
+  padding-top:0;
+  text-align: left;
+  line-height:2;
+}
+
+.heading{
+  padding-top:0;
+  font-size:21px;
+}
+
+@media(min-width:768px){
+  .heading{
+    font-size:30px;
+  }
+
+  .text{
+    font-size:14px;
   }
 }
