@@ -2,11 +2,13 @@
 #idxFrame{
   width:933px;
   height:900px;
+  display:none;
+  text-align: center;
 }
 
 @media (min-width:950px){
   #idxFrame{
-    display: none;
+    display: block;
   }
 }
 
