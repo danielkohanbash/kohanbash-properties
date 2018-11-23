@@ -23,6 +23,18 @@
   background-image: url("../img/listings.jpg");
 }
 
+.bgimg-4 {
+  background-image: url("../img/past_sales.jpg");
+}
+
+.bgimg-5 {
+  background-image: url("../img/neighborhood.jpg");
+}
+
+.bgimg-6 {
+  background-image: url("../img/contact.jpg");
+}
+
 .caption {  
   position: absolute;
   left: 0;
@@ -32,7 +44,7 @@
   font-family:Mina; 
   font-weight: 700;
   color: white;
-  text-shadow: 1px 1px rgb(209,164,35);
+  /* text-shadow: 1px 1px rgb(209,164,35); */
 }
 
 .caption .title {
@@ -82,11 +94,10 @@ h3 {
 .boxes{
   background-color:black;
   border-radius: 10px;
-  margin-top: 30px;
   border: 5px solid #ddd;
 }
 
-.mission_text, .expertise_text, .addresses{
+.mission_text, .expertise_text, .addresses, .neighborhood_title, .neighborhood_text, .contact_options{
   font-weight:400; 
   font-family:Exo; 
   padding:20px;
@@ -102,11 +113,28 @@ h3 {
   padding: 5px;
 }
 
-.asset_link, .addresses{
+.contact_options{
+  font-size:30px;
+}
+
+.neighborhood_text{
+  font-size:12px;
+  padding-top:0;
+  text-align: left;
+  line-height:2;
+  letter-spacing: 0;
+}
+
+.neighborhood_title{
+  padding-top:0;
+  font-size:21px;
+}
+
+.asset_link, .addresses, .contact_options a{
   color:white;
 }
 
-.asset_link:hover, .addresses:hover, .asset_link:focus, .addresses:focus{
+.asset_link:hover, .addresses:hover, .contact_options a:hover, .asset_link:focus, .addresses:focus, .contact_options a:focus{
   color:rgb(209,164,35);
   text-decoration: none;
 }
@@ -116,8 +144,13 @@ h3 {
     font-size: 20px;
   }
 
-  .expertise_text{
+  .expertise_text, .neighborhood_title{
     font-size:30px;
+  }
+
+  .contact_options{
+    font-size: 50px;
+    padding:0 150px;
   }
 }
 
@@ -129,27 +162,29 @@ h3 {
   } /*so when we click it, it goes to the right place*/
 
 /* CONTAINER */
-.container .jumbotron, .container-fluid .jumbotron{
-  background-color: rgba(242,242,222,.6);  
-  margin-top: 50px;
-  border-radius: 100px;
-}
 
 @media(min-width: 768px){
-  #aboutpage .container, .container{
+ .container{
     width:100%;
   }
 }
 
 .container{
   background-color: black;
+  padding:30px 30px 0 30px;
 }
 
 /* Listings */
 .addresses{
   padding:0;
   margin:5px;
-  font-size:14px;
+  font-size:11px;
+}
+
+@media(min-width:475px){
+  .addresses{
+    font-size:16px;
+  }
 }
 
 @media(min-width:768px){
@@ -165,15 +200,11 @@ h3 {
   height: 100%;
   transition: .5s ease;
   backface-visibility: hidden;
-  padding:10px;
+  padding:10px 20px;
 }
 
-.thumbnail.listings{
+.thumbnail{
   padding-top:15px;
-}
-
-p{
-  margin: 0;
 }
 
 .flyer_hover {
@@ -217,4 +248,32 @@ p{
   list-style: none;
   letter-spacing: 2px;
   font-size:12px;
+}
+
+/* HRs */
+hr{
+  margin-top:10px;
+  margin-bottom:0px; 
+  height:20px
+}
+
+hr.style1{
+overflow: visible; /* For IE */
+height:50px;
+border-style: solid;
+border-color: white;
+border-width: 4px 0 0 0;
+border-radius: 20px;
+margin-top:20px;
+}
+
+hr.style1:before { /* Not really supposed to work, but does */
+display: block;
+content: "";
+height: 30px;
+margin-top: -31px;
+border-style: solid;
+border-color: white;
+border-width: 0 0 4px 0;
+border-radius: 20px;
 }

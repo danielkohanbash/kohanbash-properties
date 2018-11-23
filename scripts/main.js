@@ -14,6 +14,9 @@ function adjustNavbarOnScroll(){
   });
 }
 
+adjustNavbarOnScroll(); 
+// needs to happen before document is ready
+
 function handleClickOutsideNavbar(){
   $(document).click(function (event) {
     var clickover = $(event.target);
@@ -25,7 +28,102 @@ function handleClickOutsideNavbar(){
   }); //this is so that clicking outside of navbar closes/collapses navbar/collapses (doesn't work on mobile)
 }
 
+function navbarGenerator(){
+  $('.navbar').html(`
+  <div class="container">
+  <!-- this will center whats in the navbar -->
+  <div class="navbar-header">
+    <!-- this is where you can put the brand -->
+    <button type="button" class="pull-left navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-nav-demo" aria-expanded="false">
+      <!-- this is the hamburger  loooking thing that shows up when we collapse our navbar. the attribute data-target is whats important here - it has to much the id - i put it on the left-->
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    
+    <a href="index.html#mission" class="navbar-brand"><img src="img/K.png"></a>
+  </div>
+  <div class="collapse navbar-collapse" id="bs-nav-demo" style = "height:40px">
+    <!-- whatever is in here is what disappears when we get to a certain size -->
+    <ul class="nav navbar-nav">
+      <!-- this is the main content of the nav -->
+      <li><a href="index.html#mission"> <i class="fas fa-home"></i> Home</a></li>
+      <li class = "diff"><a href="http://danielkohanbashproperties.com/about.html"><i class="fas fa-user"></i> About </a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-key"></i> Listings <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class = "diff"><a href="index.html#active_listings"><i class="fas fa-map-marker"></i> Active Listings</a></li>
+          <li role="separator" class="divider"></li>
+          <li class = "diff"><a href="index.html#recent_sales"><i class="fas fa-handshake"></i> Recent Sales</a></li>
+        </ul>
+      </li>
+      <li class = "search_option"><a href="http://danielkohanbashproperties.com/search.html"> <i class="fas fa-search"></i> Search</a></li>
+      
+      <li class = "dontshow"><a href="index.html#mission" class="navbar-bra"><img class = "imagek" src="img/K.png"></a></li> 
+      
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-briefcase"></i> Services <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class = "diff"><a href="http://danielkohanbashproperties.com/services.html"><i class="fas fa-building"></i> Asset Management</a></li>
+          <!-- <li role="separator" class="divider"></li>
+            <li class = "diff"><a href="#"><i class="far fa-handshake"></i> Buyer & Seller</a></li> -->
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-tree"></i> Neighborhoods <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li class = "diff"><a href="index.html#neighborhoods"><i class="fas fa-map-pin"></i> North Hollywood</a></li>
+            <li role="separator" class="divider"></li>
+            <li class = "diff"><a href="index.html#valley_village"><i class="fas fa-map-pin"></i> Valley Village </a></li>
+            <li role="separator" class="divider"></li>
+            <li class = "diff"><a href="index.html#encino"><i class="fas fa-map-pin"></i> Encino </a></li>
+            <li role="separator" class="divider"></li>
+            <li class = "diff"><a href="index.html#tarzana"><i class="fas fa-map-pin"></i> Tarzana </a></li>
+            <li role="separator" class="divider"></li>
+            <li class = "diff"><a href="index.html#beverlywood"><i class="fas fa-map-pin"></i> Beverlywood </a></li>
+            <li role="separator" class="divider"></li>
+            <li class = "diff"><a href="index.html#picfair"><i class="fas fa-map-pin"></i> Pic Fair </a></li>
+          </ul>
+        </li>
+        <li><a href="index.html#contact"> <i class="far fa-envelope"></i> Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  `);
+}
+
+function footerGenerator(){
+  $('footer').html(`
+  <div class = "row">
+  <div class = "col-sm-4 col-sm-push-4 col-xs-12" id = "middle">
+    <p><a href="index.html#mission"> <strong> Kohanbash Properties</strong></a></p>
+    <p> <a href="index.html#mission"> Home</a> | <a href="http://danielkohanbashproperties.com/about.html"> About</a> | <a href="index.html#active_listings"> Listings</a> | <a href="http://danielkohanbashproperties.com/services.html"> Services</a> | <a class = "search_option" href="http://danielkohanbashproperties.com/search.html"> Property Search |</a><a href="index.html#neighborhoods"> Neighborhoods</a></p>
+  </div>
+  
+  <div class = "col-sm-4 col-sm-pull-4 col-xs-6" id = "left">
+    <address>
+      <p>
+        <strong>Office</strong><br>
+        Keller Williams Realty Westside<br>
+        1642 Westwood Blvd<br>
+        Los Angeles, California 90024<br>
+      </p>        
+    </address>
+  </div>
+  
+  <div class = "col-sm-4 col-xs-6" id = "right">
+    <p> <strong>Daniel Kohanbash </strong> <br>
+    <a href="tel:310-770-6247"> <i class="fas fa-phone"></i> 310-770-6247</a><br>
+    <a href="mailto:danielkohanbashproperties@gmail.com?subject=Inquiry%20(From%20Website)&body=*Please%20include%20your%20name%20and%20number%20along%20with%20your%20inquiry.%20Thank%20you!"> <i class="far fa-envelope"></i> Email</a><br>
+    BRE #02046316</p>
+  </div>
+</div>
+  `);
+}
+
 $(document).ready(function(){
-  adjustNavbarOnScroll();
   handleClickOutsideNavbar();
+  navbarGenerator();
+  footerGenerator();
 });

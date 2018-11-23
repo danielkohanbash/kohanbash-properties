@@ -6,8 +6,13 @@ body, html{
   text-align: center;
   height: 100%;
   font-family: Exo;  
-  background-color:white;
+  background-color:black;
   margin:0;
+  scroll-behavior: smooth;
+}
+
+p{
+  margin: 0;
 }
 
 /***** LOGO ******/
@@ -57,7 +62,7 @@ body, html{
 /*Basic nav settings*/
 nav{
   font-size:12px;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 @media(min-width: 850px){
@@ -96,11 +101,16 @@ nav{
   border:none;
 }
 
+.navbar>.container{
+  padding:0;
+} /*so that the other container property doesnt change the nav*/
+
+
 .affix{
   position:fixed;
   top:0;
   right:0;
-  border-bottom:3px solid rgb(209,164,35);
+  border-bottom:4px solid rgb(209,164,35);
 }
 
 .nav>li.search_option, .search_option{
@@ -108,8 +118,12 @@ nav{
 } /*this cant be displayed as an option on small phones*/
 
 @media (min-width:950px){  
-  .nav>li.search_option, .search_option{
+  .nav>li.search_option{
     display: block;
+  }
+
+  .search_option{
+    display:inline;
   }
 }
 
@@ -231,6 +245,7 @@ nav{
   background-color: rgb(209,164,35);
   transition: background-color .5s;
   border-color:black;
+  margin-left:20px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -302,5 +317,72 @@ nav{
   }
   to {
     opacity:0;
+  }
+}
+
+/* FOOTER */
+footer{
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+footer p{
+color:rgb(209,164,35);
+margin-bottom: 0;
+font-weight: normal;
+padding-top: 6px;
+font-size: 14px;
+font-family: Mina;
+}
+
+footer .row{
+  margin:0;
+}
+
+#left{
+  text-align: right;
+}
+
+#right{
+  text-align: left;
+}
+
+#middle{
+  text-align: center;
+}
+
+footer a{
+color: rgb(209,164,35);
+text-decoration: none;
+}
+
+footer a:hover, footer a:focus{
+text-decoration: none;
+color:white;
+}
+
+@media(min-width: 768px){
+  footer p {
+  font-size: 18px;
+  }
+}
+
+.created_by{
+  background-color: rgb(209,164,35);
+  text-align:center; 
+  color:black; 
+  margin-bottom:0;
+  margin-top:0; 
+  padding-top:5px; 
+  padding-bottom:5px; 
+  font-size:12px; 
+  font-family:Mina; 
+  font-weight:700;
+}
+
+@media(min-width:768px){
+  .created_by{
+    font-size: 14px;
   }
 }
