@@ -75,6 +75,11 @@ nav{
   nav{
     font-size:13px;
   }
+
+  .nav>li>a{
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 @media(min-width: 768px){

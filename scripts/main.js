@@ -62,6 +62,7 @@ function navbarGenerator(){
       
       <li class = "dontshow"><a href="index.html#mission" class="navbar-bra"><img class = "imagek" src="img/K.png"></a></li> 
       
+      <li class = "diff"><a href="#"> <i class="fas fa-edit"></i> Testimonials</a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-briefcase"></i> Services <span class="caret"></spsan></a>
         <ul class="dropdown-menu">
