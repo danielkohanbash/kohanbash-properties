@@ -123,8 +123,15 @@ function footerGenerator(){
   `);
 }
 
+function footer2Generator(){
+  $('.created_by').html(`
+    <p><i class="fas fa-paint-brush"></i> Website by NikMash Creations</p>
+  `);
+}
+
 $(document).ready(function(){
   handleClickOutsideNavbar();
   navbarGenerator();
   footerGenerator();
+  footer2Generator();
 });
