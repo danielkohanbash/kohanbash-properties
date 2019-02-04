@@ -518,3 +518,11 @@ color:white;
     font-size:14px;
   }
 }
+
+.nikmash{
+  color: black;
+}
+
+.nikmash:hover, .nikmash:focus{
+  color:black;
+}
