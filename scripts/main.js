@@ -109,6 +109,7 @@ function footerGenerator(){
         Keller Williams Realty Westside<br>
         1642 Westwood Blvd<br>
         Los Angeles, California 90024<br>
+        BRE #01484104
       </p>        
     </address>
   </div>
