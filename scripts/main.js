@@ -126,7 +126,7 @@ function footerGenerator(){
 
 function footer2Generator(){
   $('.created_by').html(`
-    <p><i class="fas fa-paint-brush"></i> Website by NikMash Creations</p>
+  <p><i class="fas fa-paint-brush"></i> Website by <a class="nikmash" href="https://nikmash.com/" target="_blank"> NikMash Creations</a></p>
   `);
 }
 
