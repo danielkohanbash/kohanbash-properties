@@ -468,6 +468,24 @@ main .container{
   background-color: white;
 }
 
+.anchor{
+  display: block;
+  height: 50px; /*same height as header*/
+  margin-top: -50px; /*same height as header*/
+  visibility: hidden;
+  } /*so when we click it, it goes to the right place*/
+
+  .title-caption{
+    margin: 0;
+    color: black;
+    background: white;
+    width: 250px;
+    margin: auto;
+    padding: 15px 0px;
+    font-weight: bold;
+    /* border: 5px solid black; */
+  }
+
 @media(min-width: 768px){
   .container{
      width:100%;
