@@ -1,4 +1,6 @@
-
+.main-home{
+  padding-top:190px;
+}
 /* Parallax */
 
 .bgimg-1 {
@@ -87,46 +89,29 @@
   justify-content: flex-start;
   flex-wrap: wrap;  
   color: black;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .listings .boxes, .neighborhoods .boxes{
-  width: 280px;
+  width: 100%;
 }
 
 .listing-img img {
   padding: 0px 20px;
 }
 
-@media(min-width:400px){
+@media(min-width:700px){
   .listings .boxes, .neighborhoods .boxes{
-    width: 360px;
-  }
-
-  .neighborhoods img{
-    width:340px;
+    width: 48%;
   }
 }
 
-@media(min-width:600px){
-  .listings .boxes{
-    width: 540px;
-  }
-
-  .neighborhoods .boxes{
-    width: 480px;
-  }
-
-  .neighborhoods img{
-    width:400px;
+@media(min-width:1150px){
+  .listings .boxes, .neighborhoods .boxes{
+    width: 30%;
   }
 }
 
-@media(min-width:1170px){
-  .listings, .neighborhoods{
-    flex-direction: row;
-  }
-}
 
 .listing-description{
   padding: 10px 30px;

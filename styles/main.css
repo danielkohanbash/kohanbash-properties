@@ -104,6 +104,7 @@ nav{
 .navbar{
   background-color: black;
   border:none;
+  border-bottom:4px solid rgb(209,164,35);
 }
 
 .navbar>.container{
@@ -115,7 +116,6 @@ nav{
   position:fixed;
   top:0;
   right:0;
-  border-bottom:4px solid rgb(209,164,35);
 }
 
 .nav>li.search_option, .search_option{
