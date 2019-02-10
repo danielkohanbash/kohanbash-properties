@@ -514,7 +514,7 @@ main .container{
 }
 
 .text{
-  font-size:12px;
+  font-size:14px;
   padding-top:0;
   text-align: left;
   line-height:2;
@@ -531,7 +531,7 @@ main .container{
   }
 
   .text{
-    font-size:14px;
+    font-size:18px;
   }
 }
 

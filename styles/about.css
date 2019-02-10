@@ -3,6 +3,10 @@
   height:850px;
 }
 
+.title-caption.about{
+  width: 280px;
+}
+
 /* on non-tall cells, change positioning and height */
 @media(max-height:670px){
   .bgimg-1{
