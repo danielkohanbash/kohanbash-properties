@@ -58,34 +58,22 @@ function navbarGenerator(){
           <li class = "diff"><a href="index.html#recent_sales"><i class="fas fa-handshake"></i> Recent Sales</a></li>
         </ul>
       </li>
+
+      <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-briefcase"></i> Services <span class="caret"></spsan></a>
+      <ul class="dropdown-menu">
+        <li class = "diff"><a href="services.html#services"><i class="fas fa-building"></i> Asset Management</a></li>
+        <!-- <li role="separator" class="divider"></li>
+          <li class = "diff"><a href="#"><i class="far fa-handshake"></i> Buyer & Seller</a></li> -->
+        </ul>
+      </li>
       
       <li class = "dontshow"><a href="index.html#mission" class="navbar-bra"><img class = "imagek" src="img/K.png"></a></li> 
       
       <li class = "diff"><a href="#"> <i class="fas fa-edit"></i> Testimonials</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-briefcase"></i> Services <span class="caret"></spsan></a>
-        <ul class="dropdown-menu">
-          <li class = "diff"><a href="services.html#services"><i class="fas fa-building"></i> Asset Management</a></li>
-          <!-- <li role="separator" class="divider"></li>
-            <li class = "diff"><a href="#"><i class="far fa-handshake"></i> Buyer & Seller</a></li> -->
-          </ul>
-        </li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-tree"></i> Neighborhoods <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li class = "diff"><a href="index.html#neighborhoods"><i class="fas fa-map-pin"></i> North Hollywood</a></li>
-            <li role="separator" class="divider"></li>
-            <li class = "diff"><a href="index.html#valley_village"><i class="fas fa-map-pin"></i> Valley Village </a></li>
-            <li role="separator" class="divider"></li>
-            <li class = "diff"><a href="index.html#encino"><i class="fas fa-map-pin"></i> Encino </a></li>
-            <li role="separator" class="divider"></li>
-            <li class = "diff"><a href="index.html#tarzana"><i class="fas fa-map-pin"></i> Tarzana </a></li>
-            <li role="separator" class="divider"></li>
-            <li class = "diff"><a href="index.html#beverlywood"><i class="fas fa-map-pin"></i> Beverlywood </a></li>
-            <li role="separator" class="divider"></li>
-            <li class = "diff"><a href="index.html#picfair"><i class="fas fa-map-pin"></i> Pic Fair </a></li>
-          </ul>
-        </li>
+
+      <li class = "diff"><a href="#neighborhoods"><i class="fas fa-map-pin"></i> Neighborhoods</a></li>
+       
         <li><a href="index.html#contact"> <i class="far fa-envelope"></i> Contact</a></li>
       </ul>
     </div>
