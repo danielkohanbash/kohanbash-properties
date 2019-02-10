@@ -42,17 +42,13 @@
   line-height:2;
   font-size: 17px;
   text-align: center;
-  color:white;
+  color:black;
   list-style: none;
   letter-spacing: 2px;
 }
 
 .expertise_text{
   padding: 5px;
-}
-
-.contact_options{
-  font-size:30px;
 }
 
 .neighborhood_text{
@@ -68,14 +64,10 @@
   font-size:21px;
 }
 
-.asset_link, .addresses, .contact_options a{
-  color:white;
-}
-
-.asset_link:hover, .addresses:hover, .contact_options a:hover, .asset_link:focus, .addresses:focus, .contact_options a:focus{
+/* .asset_link:hover, .addresses:hover, .contact_options a:hover, .asset_link:focus, .addresses:focus, .contact_options a:focus{
   color:rgb(209,164,35);
   text-decoration: none;
-}
+} */
 
 @media(min-width:768px){
   .mission_text{
@@ -86,10 +78,6 @@
     font-size:30px;
   }
 
-  .contact_options{
-    font-size: 50px;
-    padding:0 150px;
-  }
 }
 
 .anchor{
@@ -99,46 +87,96 @@
   visibility: hidden;
   } /*so when we click it, it goes to the right place*/
 
-
+  .title-caption{
+    margin: 0;
+    color: black;
+    background: white;
+    width: 250px;
+    margin: auto;
+    padding: 15px 0px;
+    font-weight: bold;
+    /* border: 5px solid black; */
+  }
 
 /* Listings */
-.listings{
+
+.listings, .neighborhoods{
   display: flex;
-  padding: 20px;
+  justify-content: flex-start;
+  flex-wrap: wrap;  
+  color: black;
   flex-direction: column;
 }
 
-.listing-img img{
+.listings .boxes, .neighborhoods .boxes{
   width: 280px;
 }
 
+.listing-img img {
+  padding: 0px 20px;
+}
+
+@media(min-width:400px){
+  .listings .boxes, .neighborhoods .boxes{
+    width: 370px;
+  }
+
+  .neighborhoods img{
+    width:350px;
+  }
+}
+
+@media(min-width:600px){
+  .listings .boxes{
+    width: 540px;
+  }
+
+  .neighborhoods .boxes{
+    width: 480px;
+  }
+
+  .neighborhoods img{
+    width:400px;
+  }
+}
+
+@media(min-width:1170px){
+  .listings, .neighborhoods{
+    flex-direction: row;
+  }
+}
+
 .listing-description{
-  flex: 4;
   padding: 10px 30px;
   text-align: center;
 }
 
 .listing-text{
-  color: white;
   padding: 10px 0px;
   font-size: 20px;
 }
 
+.neighborhoods .listing-text{
+  font-size: 15px;
+}
+
 .listing-address{
-  color: white;
+  color: black;
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 .listing-address:hover{
-  color: white;
+  text-decoration: underline;
+  color: black;
 }
 
 .more-details-button{
+  margin: auto;
   margin-top: 5px;
   display: block;
-  background: transparent;
-  border: 1px solid white;
+  background: black;
+  border: 1px solid black;
   color: white;
   padding: 15px;
   transition: .5s;
@@ -151,41 +189,6 @@
   background: white;
   color:black;
   text-decoration: none;
-}
-
-.addresses{
-  padding:0;
-  margin:5px;
-  font-size:11px;
-}
-
-@media(min-width:500px){
-  .listing-img img{
-    width: 480px;
-  }
-}
-
-@media(min-width:1200px){
-  .listings{
-    flex-direction: row;
-  }
-
-  .listing-description{
-    text-align: left;
-    padding: 0px 30px;
-  }
-}
-
-@media(min-width:475px){
-  .addresses{
-    font-size:16px;
-  }
-}
-
-@media(min-width:768px){
-  .addresses{
-    font-size:20px;
-  }
 }
 
 .flyer {
@@ -234,12 +237,23 @@
   text-decoration: none;
 }
 
-.listing_details{
-  padding-left:0;
-  color:white;
-  list-style: none;
-  letter-spacing: 2px;
-  font-size:12px;
+/*Contact*/
+.contact a{
+  color: black;
+  font-size: 50px;
+  padding: 5px;
+  transition: .5s;
+}
+
+.contact a:hover, .contact a:focus{
+  text-decoration: none;
+  color: rgb(209,164,35);
+}
+
+.contact img{
+  width:200px;
+  display: block;
+  margin: auto;
 }
 
 /* HRs */

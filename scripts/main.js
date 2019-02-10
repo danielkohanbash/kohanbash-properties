@@ -58,7 +58,6 @@ function navbarGenerator(){
           <li class = "diff"><a href="index.html#recent_sales"><i class="fas fa-handshake"></i> Recent Sales</a></li>
         </ul>
       </li>
-      <li class = "search_option"><a href="search.html#search"> <i class="fas fa-search"></i> Search</a></li>
       
       <li class = "dontshow"><a href="index.html#mission" class="navbar-bra"><img class = "imagek" src="img/K.png"></a></li> 
       
@@ -99,7 +98,7 @@ function footerGenerator(){
   <div class = "row">
   <div class = "col-sm-4 col-sm-push-4 col-xs-12" id = "middle">
     <p><a href="index.html#mission"> <strong> Kohanbash Properties</strong></a></p>
-    <p> <a href="index.html#mission"> Home</a> | <a href="about.html#about"> About</a> | <a href="index.html#active_listings"> Listings</a> | <a href="services.html#services"> Services</a> | <a class = "search_option" href="search.html#search"> Property Search |</a><a href="index.html#neighborhoods"> Neighborhoods</a></p>
+    <p> <a href="index.html#mission"> Home</a> | <a href="about.html#about"> About</a> | <a href="index.html#active_listings"> Listings</a> | <a href="services.html#services"> Services</a> |</a><a href="index.html#neighborhoods"> Neighborhoods</a></p>
   </div>
   
   <div class = "col-sm-4 col-sm-pull-4 col-xs-6" id = "left">
