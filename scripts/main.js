@@ -74,7 +74,7 @@ function navbarGenerator(){
       
       <li class = "diff"><a href="testimonials.html"> <i class="fas fa-edit"></i> Testimonials</a></li>
 
-      <li class = "diff"><a href="#neighborhoods"><i class="fas fa-map-pin"></i> Neighborhoods</a></li>
+      <li class = "diff"><a href="index.html#neighborhoods"><i class="fas fa-map-pin"></i> Neighborhoods</a></li>
        
         <li><a href="index.html#contact"> <i class="far fa-envelope"></i> Contact</a></li>
       </ul>

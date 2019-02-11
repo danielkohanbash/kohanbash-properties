@@ -454,7 +454,7 @@ color:white;
   }
 }
 
-/* Elements between the parallax images */
+/* ALL OTHER MISC */
 .boxes{
   border-radius: 10px;
   background-color:white;
@@ -462,7 +462,6 @@ color:white;
   margin: 10px auto;
 }
 
-/* CONTAINER */
 .container{
   background-color: black;
   padding:30px;
@@ -479,16 +478,16 @@ main .container{
   visibility: hidden;
   } /*so when we click it, it goes to the right place*/
 
-  .title-caption{
-    margin: 0;
-    color: black;
-    background: white;
-    width: 250px;
-    margin: auto;
-    padding: 15px 0px;
-    font-weight: bold;
-    /* border: 5px solid black; */
-  }
+.title-caption{
+  margin: 0;
+  color: black;
+  background: white;
+  width: 250px;
+  margin: auto;
+  padding: 15px 0px;
+  font-weight: bold;
+  border: 5px solid black;
+}
 
 @media(min-width: 768px){
   .container{
