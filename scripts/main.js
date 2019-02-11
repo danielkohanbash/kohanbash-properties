@@ -49,7 +49,9 @@ function navbarGenerator(){
     <ul class="nav navbar-nav">
       <!-- this is the main content of the nav -->
       <li><a href="index.html#mission"> <i class="fas fa-home"></i> Home</a></li>
+
       <li class = "diff"><a href="about.html#about"><i class="fas fa-user"></i> About </a></li>
+
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fas fa-key"></i> Listings <span class="caret"></span></a>
         <ul class="dropdown-menu">
@@ -70,7 +72,7 @@ function navbarGenerator(){
       
       <li class = "dontshow"><a href="index.html#mission" class="navbar-bra"><img class = "imagek" src="img/K.png"></a></li> 
       
-      <li class = "diff"><a href="#"> <i class="fas fa-edit"></i> Testimonials</a></li>
+      <li class = "diff"><a href="testimonials.html"> <i class="fas fa-edit"></i> Testimonials</a></li>
 
       <li class = "diff"><a href="#neighborhoods"><i class="fas fa-map-pin"></i> Neighborhoods</a></li>
        
