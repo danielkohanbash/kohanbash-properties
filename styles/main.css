@@ -16,7 +16,7 @@ p{
 }
 
 .main-home{
-  padding-top:190px;
+  padding-top: 56px;
 }
 
 /***** LOGO ******/
@@ -535,6 +535,10 @@ main .container{
 
   .text{
     font-size:18px;
+  }
+
+  .main-home{
+    padding-top: 190px;
   }
 }
 
