@@ -19,6 +19,10 @@ p{
   padding-top: 56px;
 }
 
+h2{
+  font-size: 40px;
+}
+
 /***** LOGO ******/
 
 /* on mobile, dont show the logo - it'll just be the navbar. on desktop, show */
@@ -480,8 +484,8 @@ main .container{
 
 .title-caption{
   margin: 0;
-  color: black;
-  background: white;
+  color: white;
+  background: black;
   width: 250px;
   margin: auto;
   padding: 15px 0px;
