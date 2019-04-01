@@ -35,8 +35,8 @@
 /* Elements between the parallax images */
 
 .mission_text, .expertise_text, .addresses, .neighborhood_title, .neighborhood_text, .contact_options{
-  font-weight:400; 
-  font-family:Exo; 
+  font-weight:400;
+  font-family:Exo;
   padding:20px;
   line-height:2;
   font-size: 17px;
@@ -84,7 +84,7 @@
 .listings, .neighborhoods{
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
   color: black;
   flex-direction: row;
 }
@@ -138,7 +138,7 @@
 .more-details-button{
   margin: auto;
   margin-top: 5px;
-  display: block;
+  display: inline-block;
   background: black;
   border: 1px solid black;
   color: white;
@@ -223,7 +223,7 @@
 /* HRs */
 hr{
   margin-top:10px;
-  margin-bottom:0px; 
+  margin-bottom:0px;
   height:20px
 }
 
@@ -247,4 +247,3 @@ border-color: white;
 border-width: 0 0 4px 0;
 border-radius: 20px;
 }
-
