@@ -1,34 +1,33 @@
 'use strict';
 
-function adjustNavbarOnScroll(){
+function adjustNavbarOnScroll() {
   let stickySidebar = $('.navbar-fixed-top').offset().top;
-  $(window).scroll(function() {  
+  $(window).scroll(function() {
     if ($(window).scrollTop() > stickySidebar) {
       $('.navbar-fixed-top').addClass('affix');
       $('.dontshow').addClass('showit');
-    }
-    else {
+    } else {
       $('.navbar-fixed-top').removeClass('affix');
       $('.dontshow').removeClass('showit');
-    }  
+    }
   });
 }
 
-adjustNavbarOnScroll(); 
+adjustNavbarOnScroll();
 // needs to happen before document is ready
 
-function handleClickOutsideNavbar(){
-  $(document).click(function (event) {
+function handleClickOutsideNavbar() {
+  $(document).click(function(event) {
     var clickover = $(event.target);
-    var $navbar = $('.navbar-collapse');               
+    var $navbar = $('.navbar-collapse');
     var _opened = $navbar.hasClass('in');
-    if (_opened === true && !clickover.hasClass('navbar-toggle')) {      
+    if (_opened === true && !clickover.hasClass('navbar-toggle')) {
       $navbar.collapse('hide');
     }
   }); //this is so that clicking outside of navbar closes/collapses navbar/collapses (doesn't work on mobile)
 }
 
-function navbarGenerator(){
+function navbarGenerator() {
   $('.navbar').html(`
   <div class="container">
   <!-- this will center whats in the navbar -->
@@ -42,7 +41,7 @@ function navbarGenerator(){
       <span class="icon-bar"></span>
     </button>
     
-    <a href="index.html#mission" class="navbar-brand"><img src="img/K.png"></a>
+    <a href="index.html#mission" class="navbar-brand"><img src="img/dkb.png"></a>
   </div>
   <div class="collapse navbar-collapse" id="bs-nav-demo" style = "height:40px">
     <!-- whatever is in here is what disappears when we get to a certain size -->
@@ -70,7 +69,7 @@ function navbarGenerator(){
         </ul>
       </li>
       
-      <li class = "dontshow"><a href="index.html#mission" class="navbar-bra"><img class = "imagek" src="img/K.png"></a></li> 
+      <li class = "dontshow"><a href="index.html#mission" class="navbar-bra"><img class = "imagek" src="img/dkb.png"></a></li> 
       
       <li class = "diff"><a href="testimonials.html"> <i class="fas fa-edit"></i> Testimonials</a></li>
 
@@ -83,7 +82,7 @@ function navbarGenerator(){
   `);
 }
 
-function footerGenerator(){
+function footerGenerator() {
   $('footer').html(`
   <div class = "row">
   <div class = "col-sm-4 col-sm-push-4 col-xs-12" id = "middle">
@@ -113,13 +112,13 @@ function footerGenerator(){
   `);
 }
 
-function footer2Generator(){
+function footer2Generator() {
   $('.created_by').html(`
   <p><i class="fas fa-paint-brush"></i> Website by <a class="nikmash" href="https://nikmash.com/" target="_blank"> NikMash Creations</a></p>
   `);
 }
 
-$(document).ready(function(){
+$(document).ready(function() {
   handleClickOutsideNavbar();
   navbarGenerator();
   footerGenerator();
