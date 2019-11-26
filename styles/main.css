@@ -2,248 +2,246 @@
   box-sizing: border-box;
 } */
 
-body, html{
+body,
+html {
   text-align: center;
   height: 100%;
-  font-family: Exo;  
-  background-color:black;
-  margin:0;
+  font-family: Exo;
+  background-color: black;
+  margin: 0;
   scroll-behavior: smooth;
 }
 
-p{
+p {
   margin: 0;
 }
 
-.main-home{
+.main-home {
   padding-top: 56px;
 }
 
-h2{
+h2 {
   font-size: 40px;
 }
 
 /***** LOGO ******/
 
 /* on mobile, dont show the logo - it'll just be the navbar. on desktop, show */
-.logo{
+.logo {
   display: none;
   background-color: black;
   position: absolute;
   z-index: 3000;
-  height:0;
+  height: 0;
 }
 
-#daniel_logo
-{
-  display:none; 
+#daniel_logo {
+  display: none;
   position: absolute;
-  background-color: rgba(0,0,0,0);
+  background-color: rgba(0, 0, 0, 0);
 }
 
-@media(min-width: 768px){
-  #daniel_logo{
-    width:300px;
-    height:150px;
+@media (min-width: 768px) {
+  .logo {
+    width: 100%;
+    height: 130px;
+    padding-top: 20px;
+    display: block;
+  }
+
+  #daniel_logo {
+    height: 110px;
+    margin-top: 10px;
     display: block;
     left: 50%;
     transform: translateX(-50%);
     z-index: 5000;
-  }
-  
-  .logo{
-    width: 100%;  
-    height:150px;
-    display: block;
-  }
-}
-
-@media(min-width: 850px){
-  #daniel_logo{
-    height:150px;
-    width:375px;
   }
 }
 
 /***** NAVBAR ******/
 
 /*Basic nav settings*/
-nav{
-  font-size:12px;
+nav {
+  font-size: 12px;
   letter-spacing: 1px;
 }
 
-@media(min-width: 850px){
-  nav{
-    font-size:13px;
+@media (min-width: 850px) {
+  nav {
+    font-size: 13px;
   }
 }
 
-@media(min-width:1000px){
-  nav{
-    font-size:13px;
+@media (min-width: 1000px) {
+  nav {
+    font-size: 13px;
   }
 
-  .nav>li>a{
+  .nav > li > a {
     padding-left: 15px;
     padding-right: 15px;
   }
 }
 
-@media(min-width: 768px){
-  .navbar-nav{
-    float:none;
+@media (min-width: 768px) {
+  .navbar-nav {
+    float: none;
     display: inline-block;
   }
-}/* this somehow keeps it centered */
+} /* this somehow keeps it centered */
 
-.navbar-fixed-top{
+.navbar-fixed-top {
   z-index: 4000;
-  top:0px;
-  position:absolute;
+  top: 0px;
+  position: absolute;
 }
 
-@media(min-width: 768px){
-  .navbar-fixed-top{
-    top:140px;
+@media (min-width: 768px) {
+  .navbar-fixed-top {
+    top: 140px;
   }
 }
 
-.navbar{
+.navbar {
   background-color: black;
-  border:none;
-  border-bottom:4px solid rgb(209,164,35);
+  border: none;
+  border-bottom: 4px solid rgb(209, 164, 35);
 }
 
-.navbar>.container{
-  padding:0;
+.navbar > .container {
+  padding: 0;
 } /*so that the other container property doesnt change the nav*/
 
-
-.affix{
-  position:fixed;
-  top:0;
-  right:0;
+.affix {
+  position: fixed;
+  top: 0;
+  right: 0;
 }
 
-.nav>li.search_option, .search_option{
+.nav > li.search_option,
+.search_option {
   display: none;
 } /*this cant be displayed as an option on small phones*/
 
-@media (min-width:950px){  
-  .nav>li.search_option{
+@media (min-width: 950px) {
+  .nav > li.search_option {
     display: block;
   }
 
-  .search_option{
-    display:inline;
+  .search_option {
+    display: inline;
   }
 }
 
 /* BRANDS */
-.navbar-brand{
+.navbar-brand {
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
   text-align: center;
   font-family: Mina;
-  color: rgb(242,242,222);
-  padding:0 0;
-  padding-top:10px;
+  color: rgb(242, 242, 222);
+  padding: 0 0;
+  padding-top: 10px;
   z-index: 6000;
   display: block;
 }
 
-.navbar-brand img{
-  width:50px;
-  height:30px;
+.navbar-brand img {
+  width: 50px;
+  height: 30px;
   background-color: none;
 }
 
-.navbar-bra{
-  display:none;
+.navbar-bra {
+  display: none;
   position: absolute;
   transform: translateX(-50%);
   left: 50%;
   text-align: center;
   font-family: Mina;
-  color: rgb(242,242,222);
-  padding-top:10px;
+  color: rgb(242, 242, 222);
+  padding-top: 10px;
   z-index: 6000;
-  padding-top:10px;
+  padding-top: 10px;
 }
 
-.navbar-bra img{
-  width:50px;
-  height:30px;
+.navbar-bra img {
+  width: 50px;
+  height: 30px;
   background-color: none;
 }
 
-.navbar-nav>li>a.navbar-bra{
+.navbar-nav > li > a.navbar-bra {
   padding: 0 0;
-  padding-top:10px;
+  padding-top: 10px;
 }
 
-.nav>li.showit{
-  display:none;
+.nav > li.showit {
+  display: none;
 }
 
-.nav>li.dontshow{
-  display: none; 
+.nav > li.dontshow {
+  display: none;
 }
 
-.navbar-default .navbar-nav>li.dontshow.showit > a:focus, .navbar-default .navbar-nav>li.dontshow.showit > a:hover{
-  background-color:transparent;
+.navbar-default .navbar-nav > li.dontshow.showit > a:focus,
+.navbar-default .navbar-nav > li.dontshow.showit > a:hover {
+  background-color: transparent;
 }
 
-@media(min-width:768px){
-  .navbar-brand{
+@media (min-width: 768px) {
+  .navbar-brand {
     display: none;
-  } 
-  
-  .nav>li.showit{
-    display:block;
-    pointer-events:auto;
+  }
+
+  .nav > li.showit {
+    display: block;
+    pointer-events: auto;
   }
 }
 
 /* DROPDOWN MENU SETTINGS */
-.dropdown-menu{
-  font-size:12px;
-  padding:9px;
-  border:none;
+.dropdown-menu {
+  font-size: 12px;
+  padding: 9px;
+  border: none;
   background-color: black;
 }
 
-.dropdown-menu .divider{
-  background-color: rgb(209,164,35);
+.dropdown-menu .divider {
+  background-color: rgb(209, 164, 35);
 }
 
-.navbar-default .navbar-collapse{
-  border-color:rgb(209,164,35);
+.navbar-default .navbar-collapse {
+  border-color: rgb(209, 164, 35);
 }
 
-.navbar-nav .open .dropdown-menu{
+.navbar-nav .open .dropdown-menu {
   background-color: black;
 }
 
-.dropdown-menu>li>a{
-  transition: background-color .3s;
-  color:rgb(209,164,35);
+.dropdown-menu > li > a {
+  transition: background-color 0.3s;
+  color: rgb(209, 164, 35);
 }
 
-.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
-  background-color: rgb(209,164,35);
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  background-color: rgb(209, 164, 35);
 }
 
-.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+.navbar-default .navbar-nav .open .dropdown-menu > li > a {
   color: white;
   text-align: center;
 }
 
-.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover, .navbar-default .navbar-nav .open .dropdown-menu>li>a:active{
-  background-color: rgb(209,164,35);
-  color:black;
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+.navbar-default .navbar-nav .open .dropdown-menu > li > a:active {
+  background-color: rgb(209, 164, 35);
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -253,37 +251,39 @@ nav{
 }
 
 /* TOGGLE */
-.navbar-default .navbar-toggle{
-  z-index:3;
-  background-color: rgb(209,164,35);
-  transition: background-color .5s;
-  border-color:black;
-  margin-left:20px;
+.navbar-default .navbar-toggle {
+  z-index: 3;
+  background-color: rgb(209, 164, 35);
+  transition: background-color 0.5s;
+  border-color: black;
+  margin-left: 20px;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
   background-color: black;
 }
 
-
 /* LI and A elements */
-.navbar-default .navbar-nav>li>a{
-  transition: background-color .3s;
-  color: rgb(209,164,35);
+.navbar-default .navbar-nav > li > a {
+  transition: background-color 0.3s;
+  color: rgb(209, 164, 35);
 }
 
-.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover{
-  background-color: rgb(209,164,35);
-  color:black;
+.navbar-default .navbar-nav > li > a:focus,
+.navbar-default .navbar-nav > li > a:hover {
+  background-color: rgb(209, 164, 35);
+  color: black;
 }
 
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover
-{
-  color:black;
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:focus,
+.navbar-default .navbar-nav > .open > a:hover {
+  color: black;
 }
 
 /* NAVBAR EFFECTS */
-.navbar-brand, ul a {
+.navbar-brand,
+ul a {
   animation: fadein 2s;
   -moz-animation: fadein 2s; /* Firefox */
   -webkit-animation: fadein 2s; /* Safari and Chrome */
@@ -293,116 +293,121 @@ nav{
 
 @keyframes fadein {
   from {
-    opacity:0;
+    opacity: 0;
   }
   to {
-    opacity:1;
+    opacity: 1;
   }
 }
-@-moz-keyframes fadein { /* Firefox */
+@-moz-keyframes fadein {
+  /* Firefox */
   from {
-    opacity:0;
+    opacity: 0;
   }
   to {
-    opacity:1;
+    opacity: 1;
   }
 }
-@-webkit-keyframes fadein { /* Safari and Chrome */
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
   from {
-    opacity:0;
+    opacity: 0;
   }
   to {
-    opacity:1;
+    opacity: 1;
   }
 }
-@-o-keyframes fadein { /* Opera */
+@-o-keyframes fadein {
+  /* Opera */
   from {
-    opacity:0;
+    opacity: 0;
   }
   to {
     opacity: 1;
   }
 }
 
-@-webkit-keyframes fadeout { /* Safari and Chrome */
+@-webkit-keyframes fadeout {
+  /* Safari and Chrome */
   from {
-    opacity:1;
+    opacity: 1;
   }
   to {
-    opacity:0;
+    opacity: 0;
   }
 }
 
 /* FOOTER */
-footer{
+footer {
   background-color: black;
   padding-top: 20px;
   padding-bottom: 5px;
-  border-top:4px solid rgb(209,164,35);
+  border-top: 4px solid rgb(209, 164, 35);
 }
 
-footer p{
-color:rgb(209,164,35);
-margin-bottom: 0;
-font-weight: normal;
-padding-top: 6px;
-font-size: 14px;
-font-family: Mina;
+footer p {
+  color: rgb(209, 164, 35);
+  margin-bottom: 0;
+  font-weight: normal;
+  padding-top: 6px;
+  font-size: 14px;
+  font-family: Mina;
 }
 
-footer .row{
-  margin:0;
+footer .row {
+  margin: 0;
 }
 
-#left{
+#left {
   text-align: right;
 }
 
-#right{
+#right {
   text-align: left;
 }
 
-#middle{
+#middle {
   text-align: center;
 }
 
-footer a{
-color: rgb(209,164,35);
-text-decoration: none;
+footer a {
+  color: rgb(209, 164, 35);
+  text-decoration: none;
 }
 
-footer a:hover, footer a:focus{
-text-decoration: none;
-color:white;
+footer a:hover,
+footer a:focus {
+  text-decoration: none;
+  color: white;
 }
 
-@media(min-width: 768px){
+@media (min-width: 768px) {
   footer p {
-  font-size: 18px;
+    font-size: 18px;
   }
 }
 
-.created_by{
-  background-color: rgb(209,164,35);
-  text-align:center; 
-  color:black; 
-  margin-bottom:0;
-  margin-top:0; 
-  padding-top:5px; 
-  padding-bottom:5px; 
-  font-size:12px; 
-  font-family:Mina; 
-  font-weight:700;
+.created_by {
+  background-color: rgb(209, 164, 35);
+  text-align: center;
+  color: black;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  font-family: Mina;
+  font-weight: 700;
 }
 
-@media(min-width:768px){
-  .created_by{
+@media (min-width: 768px) {
+  .created_by {
     font-size: 14px;
   }
 }
 
 /* Parallax */
-.parallax{
+.parallax {
   position: relative;
   /* opacity: 0.65; */
   background-attachment: fixed;
@@ -412,13 +417,13 @@ color:white;
   height: 500px;
 }
 
-.caption {  
+.caption {
   position: absolute;
   left: 0;
   top: 50%;
   width: 100%;
   text-align: center;
-  font-family:Mina; 
+  font-family: Mina;
   font-weight: 700;
   color: white;
   /* text-transform: uppercase; */
@@ -433,56 +438,56 @@ color:white;
   letter-spacing: 5px;
 }
 
-@media (min-width:768px){
+@media (min-width: 768px) {
   .caption .title {
-    font-size: 30px;  
+    font-size: 30px;
     letter-spacing: 10px;
   }
 }
 
 /* on non-tall cells, change positioning and height */
-@media(max-height:670px){
-  .caption{
-    top:45%;
+@media (max-height: 670px) {
+  .caption {
+    top: 45%;
   }
-  
-  .parallax{
-    height:300px;
+
+  .parallax {
+    height: 300px;
   }
 }
 
 /* Turn off parallax scrolling for tablets and phones */
 @media only screen and (max-device-width: 1024px) {
-  .parallax{
+  .parallax {
     background-attachment: scroll;
   }
 }
 
 /* ALL OTHER MISC */
-.boxes{
+.boxes {
   border-radius: 10px;
-  background-color:white;
+  background-color: white;
   border: 5px solid black;
   margin: 10px auto;
 }
 
-.container{
+.container {
   background-color: black;
-  padding:30px;
+  padding: 30px;
 }
 
-main .container{
+main .container {
   background-color: white;
 }
 
-.anchor{
+.anchor {
   display: block;
   height: 50px; /*same height as header*/
   margin-top: -50px; /*same height as header*/
   visibility: hidden;
-  } /*so when we click it, it goes to the right place*/
+} /*so when we click it, it goes to the right place*/
 
-.title-caption{
+.title-caption {
   margin: 0;
   color: white;
   background: black;
@@ -493,63 +498,65 @@ main .container{
   border: 5px solid black;
 }
 
-@media(min-width: 768px){
-  .container{
-     width:100%;
-   }
- }
- 
- .thumbnail{
-  padding-top:15px;
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+
+.thumbnail {
+  padding-top: 15px;
 }
 
 /* On other pages */
-.other.container{
+.other.container {
   background-color: white;
 }
 
-.heading, .text{
-  font-weight:400; 
-  font-family:Exo; 
-  padding:20px;
-  line-height:2;
+.heading,
+.text {
+  font-weight: 400;
+  font-family: Exo;
+  padding: 20px;
+  line-height: 2;
   font-size: 17px;
   text-align: center;
-  color:black;
+  color: black;
   list-style: none;
   letter-spacing: 2px;
 }
 
-.text{
-  font-size:14px;
-  padding-top:0;
+.text {
+  font-size: 14px;
+  padding-top: 0;
   text-align: left;
-  line-height:2;
+  line-height: 2;
 }
 
-.heading{
-  padding-top:0;
-  font-size:21px;
+.heading {
+  padding-top: 0;
+  font-size: 21px;
 }
 
-@media(min-width:768px){
-  .heading{
-    font-size:30px;
+@media (min-width: 768px) {
+  .heading {
+    font-size: 30px;
   }
 
-  .text{
-    font-size:18px;
+  .text {
+    font-size: 18px;
   }
 
-  .main-home{
+  .main-home {
     padding-top: 190px;
   }
 }
 
-.nikmash{
+.nikmash {
   color: black;
 }
 
-.nikmash:hover, .nikmash:focus{
-  color:black;
+.nikmash:hover,
+.nikmash:focus {
+  color: black;
 }
