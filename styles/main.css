@@ -488,11 +488,9 @@ main .container {
 } /*so when we click it, it goes to the right place*/
 
 .title-caption {
-  margin: 0;
+  margin: 0 -30px;
   color: white;
   background: black;
-  width: 275px;
-  margin: auto;
   padding: 15px 0px;
   font-weight: bold;
   border: 5px solid black;
