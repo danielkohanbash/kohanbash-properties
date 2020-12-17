@@ -81,6 +81,15 @@
 
 /* Listings */
 
+.listings .boxes {
+  display: flex;
+  flex-direction: column;
+}
+
+.listing-img, listing-description {
+  flex: 1;
+}
+
 .listings, .neighborhoods{
   display: flex;
   justify-content: flex-start;
