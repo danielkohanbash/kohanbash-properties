@@ -86,7 +86,7 @@ function footerGenerator() {
   $('footer').html(`
   <div class = "row">
   <div class = "col-sm-4 col-sm-push-4 col-xs-12" id = "middle">
-    <p><a href="index.html#mission"> <strong> Kohanbash Properties</strong></a></p>
+    <p><a href="index.html#mission"> <strong> DKB Realty</strong></a></p>
     <p> <a href="index.html#mission"> Home</a> | <a href="about.html#about"> About</a> | <a href="index.html#active_listings"> Listings</a> | <a href="services.html#services"> Services</a> |</a><a href="index.html#neighborhoods"> Neighborhoods</a></p>
   </div>
   
